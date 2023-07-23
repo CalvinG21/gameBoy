@@ -1,70 +1,53 @@
-# Getting Started with Create React App
+# Hang-Man
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Hang-Man Game is a classic word-guessing game built using React functional components, React hooks, React-Redux and React-Bootstrap. A player will have 10 atempts to try and guess a secret word and if player guesses all correct alphabets of the word then game is won, else lost.
 
-## Available Scripts
+## How to Play
 
-In the project directory, you can run:
+1. Access the Hangman Game React application.
+2. Select a difficulty level.
+3. Click the "Start Game" button to begin the game.
+4. A random word will be chosen for you to guess.
+4. Use your keyboard or on-screen keyboard to guess letters one by one.
+5. If the letter is part of the word, it will be revealed in its correct position(s) and the alphabet button will turn green.
+6. If the letter is not part of the word, the Hangman figure will begin to appear on the graphic and the alphabet button will turn red.
+7. Keep guessing until you have correctly guessed all the letters in the word or the Hangman figure is completed.
+8. You win if you guess the word before the Hangman is completed; otherwise, you lose.
 
-### `npm start`
+## Installation and Setup
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+1. Clone this repository to your local machine.
+2. Navigate to the project directory using the terminal or command prompt.
+3. Run `npm install` to install the required dependencies.
+4. Run `npm start` to start the development server.
+5. The application will open in your default web browser at `http://localhost:3000`.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Technologies Used
 
-### `npm test`
+- React: A JavaScript library for building user interfaces.
+- React functional components: Using functional components and hooks to manage state and behavior.
+- React Hooks: to handle components lifecycle,set-up and user interaction.
+- React-Bootstrap: A library that integrates Bootstrap components with React, providing a responsive design and UI elements.
+- React-Redux: Global State storage of data accessible to all components of the application
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Project Structure
 
-### `npm run build`
+The project is organized into the following directories:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- `src`: Contains the main source code for the Hangman Game.
+  - `components`: Contains reusable React components used in the game.
+  - `reduxStore`: Contains a global redux store and slices of state.
+  - `images`: Contains images used in the game. 
+  - `App.js`: The main application component that renders the game.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Credits
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+The Hangman Game was developed by Calvin Govindsamy.
 
-### `npm run eject`
+## Acknowledgments
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Special thanks to [mention any external libraries, tutorials, or resources used] for their valuable contributions to this project.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Feedback and Contribution
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Feedback and contributions are welcome! If you find any issues or have ideas to improve the game, please feel free to create an issue or submit a pull request.
